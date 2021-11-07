@@ -127,7 +127,9 @@ module MoneyRails
       end
 
       def locale_backend
-        Money.locale_backend
+        nil
+        # Commented because we use system  separator for validation
+        # Money.locale_backend
       end
     end
   end
